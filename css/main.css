@@ -1,0 +1,102 @@
+/*--------html1-----pagina principal---*/
+
+body
+{
+    margin: 0;
+    padding: 0;
+}
+.fondo
+{
+    background-image: url(../img/fondo2.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.header-index img
+{
+    width: 150px;
+    margin: 40px;
+}
+.section-index{
+    padding-top: 190px;
+}
+.section-index button
+{
+    background: none;
+    border-radius: 7px;
+    width: 150px;
+    margin-left: 30px;
+}
+.section-index a 
+{
+    font-size: 25px;
+    color: white; 
+}
+.section-index  button:hover
+{
+    background: #f464bc; 
+    color: white;
+}
+
+/*----------------html2-----SING UP----*/
+.sing-header
+{
+    font-weight: bold;
+}
+.sing-section .row
+{
+    font-weight: bolder;
+}
+.icono
+{
+    font-size: 30px;
+    margin-right:60px;
+}
+.next{
+    margin-top: 80px;
+    border: none;
+    background: #db1e9a;
+    color: white;
+    box-sizing: border-box;
+    width: 200px;
+    border-radius: 7px;
+    font-size: 30px;
+}
+
+/*-------------HTML-PAISES---------------*/
+.paises{
+    padding: 0
+}
+.paises .li{
+    border-bottom: 1px solid #909090;
+    background:#f0efef;
+    box-sizing: border-box;
+    padding: 10px 5px 3px 20px;
+    font-weight: 600;
+}
+.paises li{
+    box-sizing: border-box;
+    padding: 7px;
+    font-weight: 600;
+    font-size: 15px;
+    list-style: none;
+    border-top: 1px solid #909090;
+}
+.paises img {
+    margin-right: 10px;
+}
+.paises span{
+    font-weight: bold;
+    float:right;
+}
+/*--------HTML--DATOS---------*/
+.section-datos
+{
+    text-align: center;
+    font-weight: bold;
+}
+.section-datos .color
+{
+    color: #3ad1ed;
+}
+
