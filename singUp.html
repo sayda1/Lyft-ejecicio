@@ -14,12 +14,12 @@
         <div class="container">
             <div class="row text-center">
                <ul class="list-inline">
-                      <li class="icono">
-                          <a href="index.html"><h4 class="fa fa-chevron-left"></h4></a>
-                      </li>
-                      <li><h4> Sing up</h4>
-                  </ul>
-                   <p>Join now for free ride credit</p>
+                    <li class="icono">
+                        <a href="index.html"><h4 class="fa fa-chevron-left"></h4></a>
+                    </li>
+                      <li><h4> Sing up</h4></li>
+                </ul>
+                <p>Join now for free ride credit</p>
             </div>
             <hr>
         </div>
@@ -28,24 +28,25 @@
     <section class="sing-section">
         <div class="container">
             <div class="row text-center">
-                <div class="col-md-12">
+                <form class="col-md-12">
                     <div class="input-group">
                         <div class="input-group-btn">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-
+                            <button class="btn btn-default dropdown-toggle" data-
                             toggle="dropdown" aria-haspopup="true" id="boton">
                             <img src="img-paises/PE.png" alt="">
                             <a href="paises.html"><span class="caret"></span></a>
                             </button>
                         </div>
-                        <input type="text" class="form-control" aria-label="" id="numero"
-                        placeholder="+51  1234567">
+                        <input type="number" class="form-control" aria-label="" id="numero"
+                        placeholder="+51  1234567" maxlength="9" required>
                     </div>
-                    <p>We'i send a text  to verity your phone</p>
-                    <button class="next">NEXT</button>
-                </div>
+                    <p>We'i send a text to verity your phone</p>
+                    <button type="submit" class="next"><a href="datos.html">NEXT</a></button>
+                </form>
             </div>
         </div>
     </section>
 </body>
 <script src="js/singUp.js"></script>
+<script src="js/paises.js"></script>
 </html>

@@ -1,8 +1,29 @@
+/*-----------------GALAXY-S5-----*/
+@media screen and (max-width:640px) and (min-width:360px) 
+{
+    .section-index{
+        
+        padding-top:28em;
+        padding-bottom: 20px;
+    }
+    .section-index button
+    {
+        margin: 0;
+        
+    }
+}
+/*-----------------NEXUS 6P---------*/
+@media screen and (max-width:732px) and (min-width:412px)
+{
+    .section-index{
+        
+    } 
+}
 /*-----------------!PHONE 5-----*/
 @media screen and (max-width:568px) and (min-width:320px) {
    .section-botones 
     {
-        padding-top:20em;
+        padding-top:12em;
     }
     .section-botones button 
     {
@@ -15,5 +36,5 @@
         padding:5px 10px;
     }
 }
-/*-----------------GALAXY S5-----*/
+/*----------------------*/
 /*-----------------GALAXY S5-----*/
