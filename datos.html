@@ -30,17 +30,19 @@
                 <div class="col-md-12">
                     <div class="input-group">
                         <span class="input-group-addon"><span class="fa fa-user"></span></span>
-                        <input type="text" class="form-control" placeholder="Nombre">
+                        <input name="remitosucursal" id="remitosucursal" type="text" required class="form-control" placeholder="Nombre" maxlength="30">
+                        <span class="input-group-addon"> <span class="fa fa-user-plus"></span></span>
+                        <input name="remitonumero" id="remitonumero" type="text" required class="form-control" placeholder="Apellido" maxlength="30">
                     </div>
                     <br/>
                     <div class="input-group">
-                        <span class="input-group-addon"><span class="fa fa-envelope-o"></span></span>
-                        <input type="text" class="form-control" placeholder="Apellido">
+                        <span class="input-group-addon"> <span></span><span class="fa fa-envelope-o"></span></span>
+                        <input type="text" class="form-control" placeholder="E-mail" maxlength="50">
                     </div>
                     <input type="checkbox">
                     <span>I agree to Lyft's<span class="color"> Termes of Service</span></span>
                     <br>
-                    <button class="next"  onclick="validar()"><a href="app.html">NEXT</a></button>
+                    <button class="next"><a href="app.html">NEXT</a></button>
                 </div>
             </div>
         </div>

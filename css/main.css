@@ -65,6 +65,10 @@ a{
     border-radius: 7px;
     font-size: 30px;
 }
+#codigo {
+    background:none;
+    border-left: none;
+}
 
 /*-------------HTML-PAISES---------------*/
 .paises{
@@ -83,14 +87,16 @@ a{
     font-weight: 600;
     font-size: 15px;
     list-style: none;
-    border-top: 1px solid #909090;
 }
 .paises img {
     margin-right: 10px;
 }
-.paises span{
+.paises .span{
     font-weight: bold;
     float:right;
+}
+.paises .codigo{
+    display: none;
 }
 /*--------HTML--DATOS---------*/
 .section-datos
