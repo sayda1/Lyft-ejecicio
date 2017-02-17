@@ -30,22 +30,26 @@
                 <div class="col-md-12">
                     <div class="input-group">
                         <span class="input-group-addon"><span class="fa fa-user"></span></span>
-                        <input name="remitosucursal" id="remitosucursal" type="text" required class="form-control" placeholder="Nombre" maxlength="30">
+                        <input name="remitosucursal" type="text" class="form-control" placeholder="Name" id="nombre">
                         <span class="input-group-addon"> <span class="fa fa-user-plus"></span></span>
-                        <input name="remitonumero" id="remitonumero" type="text" required class="form-control" placeholder="Apellido" maxlength="30">
+                        <input name="remitonumero" type="text" required class="form-control" placeholder="LastName" id="apellido">
                     </div>
+                    <span id="mensaNombre"></span><span id="mensaApellido"></span>
                     <br/>
                     <div class="input-group">
                         <span class="input-group-addon"> <span></span><span class="fa fa-envelope-o"></span></span>
-                        <input type="text" class="form-control" placeholder="E-mail" maxlength="50">
+                        <input type="text" class="form-control" placeholder="E-mail" maxlength="50" id="correo">
                     </div>
+                    <p id="mensaCorreo"></p>
+                    
                     <input type="checkbox">
                     <span>I agree to Lyft's<span class="color"> Termes of Service</span></span>
                     <br>
-                    <button class="next"><a href="app.html">NEXT</a></button>
+                    <button class="next" id="next" onclick="validar()"><a href="#">NEXT</a></button>
                 </div>
             </div>
         </div>
     </section>
 </body>
+<script src="js/datos.js"></script>
 </html>
