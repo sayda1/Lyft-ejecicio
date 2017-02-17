@@ -6,45 +6,23 @@ function init ()
 var map;
 function initMap() 
 {
-    var myLatLng = [
-        {lat: -25.363, lng: 131.044 , },
-        {lat: 825.363, lng: -131.044},
-    ]
-    for (var i in map){
-    map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 8,
-    center:myLatLng
-   });
-    }
-  var marker = new google.maps.Marker({
-    position: myLatLng,
+    var mapConfig={
+        center:{
+            lat: -16.24573891999999998, lng: -71.53151308
+        },
+        zoom:10
+    };
+    
+    map = new google.maps.Map(document.getElementById('map'));
+   var miLati1={ lat: -16.24573891999999998, lng: -71.53151308};
+   var miLati={ lat: 16.24891999999998, lng: -71.5311308};
+   var miLati={ lat: 16.245799999998, lng: -71.531308}
+  
+   var marker = new google.maps.Marker({
+    position: miLati1,
     map: map,
-    title: 'Hello World!',
+    title: 'Helloaki stoy!',
     icon:'img/paloma2.jpg'
   }); 
 }
 
-/*
-function init ()
-{
-    
-    
-}
-var map;
-function initMap() 
-{
-    var myLatLng = {lat: -25.363, lng: 131.044};
-    map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 8,
-    center:myLatLng
-  });
-    
-  var marker = new google.maps.Marker({
-    position: myLatLng,
-    map: map,
-    title: 'Hello World!',
-    icon:'img/paloma2.jpg'
-  }); 
-}
-
-*/
