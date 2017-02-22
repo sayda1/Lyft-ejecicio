@@ -1,5 +1,33 @@
-
 function validar(){
+    
+    var nombre=$('#nombre');
+    if (nombre.val===""){
+        alert("Ya cargue....!!!");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*function validar(){
     var valiNombre = /^[a-zA-Z]*$/;
     var valiCorreo = /^([a-z]+[a-z1-9._-]*)@{1}([a-z1-9\.]{2,})\.([a-z]{2,3})$/;
     var nombre = document.getElementById("nombre").value;
@@ -47,4 +75,4 @@ function validar(){
     }else{
        mensaCorreo.innerHTML="";
     }
-}
+*/

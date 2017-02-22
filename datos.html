@@ -9,20 +9,19 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
-    <header class="sing-header">
-        <div class="container">
-            <div class="row text-center">
+   <header class="sing-header">
+       <div class="container">
+           <div class="row text-center">
                <ul class="list-inline">
-                      <li class="icono">
-                          <a href="index.html"><h4 class="fa fa-chevron-left"></h4></a>
-                      </li>
-                      <li><h4> Sing up</h4>
-                  </ul>
-                   <p>Join now for free ride credit</p>
-            </div>
-            <hr>
-        </div>
-    </header>
+                   <li class="icono">
+                       <a href="index.html"><h4 class="fa fa-chevron-left"></h4></a>
+                    </li>
+                   <li><h4>Sing Up</h4></li>
+               </ul>
+               <p>Join now for free ride credit</p>
+           </div>
+       </div>
+   </header>
     
     <section class="section-datos">
         <div class="container">
@@ -30,7 +29,7 @@
                 <div class="col-md-12">
                     <div class="input-group">
                         <span class="input-group-addon"><span class="fa fa-user"></span></span>
-                        <input name="remitosucursal" type="text" class="form-control" placeholder="Name" id="nombre">
+                        <input name="remitosucursal" type="text" class="form-control" placeholder="Name" id="nombre" onkeyup="valiNombre()">
                         <span class="input-group-addon"> <span class="fa fa-user-plus"></span></span>
                         <input name="remitonumero" type="text" required class="form-control" placeholder="LastName" id="apellido">
                     </div>
@@ -45,11 +44,12 @@
                     <input type="checkbox">
                     <span>I agree to Lyft's<span class="color"> Termes of Service</span></span>
                     <br>
-                    <button class="next" id="next" onclick="validar()"><a href="#">NEXT</a></button>
+                    <button class="next" id="next" onclick="validar()"><a href="datos.html">NEXT</a></button>
                 </div>
             </div>
         </div>
     </section>
 </body>
-<script src="js/datos.js"></script>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/datos.js"></script>
 </html>
