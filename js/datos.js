@@ -1,31 +1,26 @@
 function validar(){
+    //VALIDAR EL NOMBRE
+    var nombre=$('#nombre').val();
+    if (nombre===""){
+        $('#mensaNombre').html('Enter your name.')
+        console.log($('#mensaNombre'));
+    }
     
-    var nombre=$('#nombre');
-    if (nombre.val===""){
-        alert("Ya cargue....!!!");
+    //VALIDAR EL APELLIDO
+    var apellido =$('#apellido').val();
+    if(apellido===""){
+        $('#mensaApellido').html('Enter your last name.');
+    }
+    //VALIDAR EL CORREO
+    var valiCorreo = /^([a-z]+[a-z1-9._-]*)@{1}([a-z1-9\.]{2,})\.([a-z]{2,3})$/;
+    var correo=$('#correo').val();
+    if(correo===""){
+        $('#mensaCorreo').html('Enter your email.');
+    }else if (!valiCorreo.test(correo)){
+        $('#mensaCorreo').html('');
+        $('#mensaCorreo').html('Check your email.');
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*function validar(){
     var valiNombre = /^[a-zA-Z]*$/;
