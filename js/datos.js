@@ -1,73 +1,50 @@
-function validar(){
-    //VALIDAR EL NOMBRE
+$(document).ready(init);
+function init(){
+    valiNombre();
+    valiApellido();
+    valiCorreo();
+}
+
+//VALIDAR EL NOMBRE
+function valiNombre(){ 
+    
+    var exprecion = /^[a-zA-Z]*$/;
     var nombre=$('#nombre').val();
     if (nombre===""){
-        $('#mensaNombre').html('Enter your name.')
-        console.log($('#mensaNombre'));
+        $('#mensaNombre').css('color' , 'red').html('Enter your name.')
+    }else if (!exprecion.test(nombre)){  
+        $('#mensaNombre').css('color' , 'red').html('Write your name correctly.');
+    }else{
+        $('#mensaNombre').css('color' , 'green').html('Valid..!');  
+        //$('#mensaNombre').empty();
     }
+}
+
+//VALIDAR EL APELLIDO
+function valiApellido(){
     
-    //VALIDAR EL APELLIDO
+    var exprecion = /^[a-zA-Z]*$/;
     var apellido =$('#apellido').val();
     if(apellido===""){
-        $('#mensaApellido').html('Enter your last name.');
+        $('#mensaApellido').css('color' , 'red').html('Enter your last name.');
+    }else if (!exprecion.test(apellido)){
+        $('#mensaApellido').css('color','red').html('Write your last name correctly.');
+    }else{
+        $('#mensaApellido').css('color','green').html('Valid..!');
+        //$('#mensaApellido').empty();
     }
+}
+function valiCorreo()
+{
     //VALIDAR EL CORREO
     var valiCorreo = /^([a-z]+[a-z1-9._-]*)@{1}([a-z1-9\.]{2,})\.([a-z]{2,3})$/;
     var correo=$('#correo').val();
     if(correo===""){
-        $('#mensaCorreo').html('Enter your email.');
+        $('#mensaCorreo').css('color','red').html('Check your email .');
     }else if (!valiCorreo.test(correo)){
-        $('#mensaCorreo').html('');
-        $('#mensaCorreo').html('Check your email.');
-    }
-}
-
-/*function validar(){
-    var valiNombre = /^[a-zA-Z]*$/;
-    var valiCorreo = /^([a-z]+[a-z1-9._-]*)@{1}([a-z1-9\.]{2,})\.([a-z]{2,3})$/;
-    var nombre = document.getElementById("nombre").value;
-    var apellido = document.getElementById("apellido").value;
-    var correo = document.getElementById("correo").value;
-    var mensaNombre=document.getElementById("mensaNombre");
-    var mensaApellido=document.getElementById("mensaApellido");
-    var mensaCorreo=document.getElementById("mensaCorreo");
-    // validacion del nombre
-    if(nombre===""){
-        mensaNombre.innerHTML="You must fill this field."
-    }else if (!valiNombre.test(nombre))
-    {
-        mensaNombre.innerHTML="";
-        mensaNombre.innerHTML="Enter your name correctly."
+        $('#mensaCorreo').empty();
+        $('#mensaCorreo').css('color','red').html('lola_tkm@gmail.com');
     }else{
-        if(nombre.toLowerCase())
-        {   
-           mensaNombre.innerHTML=""; document.getElementById("nombre").value=nombre.charAt(0).toUpperCase()+nombre.slice(1);
-        }else{
-          mensaNombre.innerHTML="";
-        }  
-    }
-    //validacion del apellido
-    if (apellido===""){
-        mensaApellido.innerHTML="You must fill this field.";
-    }else if (!valiNombre.test(apellido))
-    {
-        mensaApellido.innerHTML="";
-       mensaApellido.innerHTML="Enter your lastname correctly.";
-    }else{
-        if(apellido.toLowerCase())
-        {    
-           mensaApellido.innerHTML=""; document.getElementById("apellido").value=apellido.charAt(0).toUpperCase()+apellido.slice(1);
-        }else{
-          mensaApellido.innerHTML="";
-        }  
-    }
-   // validacion del correo
-    if(correo.value===""){
-        mensaCorreo.innerHTML="You must fill this field."
-    }else if (!valiCorreo.test(correo)){
-        mensaCorreo.innerHTML="";
-        mensaCorreo.innerHTML="Check your email."
-    }else{
-       mensaCorreo.innerHTML="";
-    }
-*/
+        $('#mensaCorreo').css('color','green').html('Valid .!');
+    }   
+}  

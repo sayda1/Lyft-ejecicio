@@ -28,25 +28,25 @@
     <section class="sing-section">
         <div class="container">
             <div class="row text-center">
-                <form class="form-signup">
+                <div class="col-md-12">
                     <div class="input-group">
                         <div class="input-group-btn">
-                            <a href="paises.html" class="btn btn-default dropdown-toggle" data-
-                            toggle="dropdown" aria-haspopup="true" id="boton-pais">
+                           <a href="paises.html" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" id="boton-pais">
                             <img src="img-paises/PE.png" alt="" id="imgPais">
                             <span class="caret"></span>
                             </a>
                         </div>
                         <span class="input-group-addon" id="codigo">+51</span>
-                        <input type="text" class="form-control" placeholder="123456789 nueve digitos"  id="numero" maxlength="9">
-                        <div id="salida"></div>
+                        <input type="number" class="form-control" placeholder="123456789"  id="numero" onkeyup="valiNumero()">
                     </div>
+                    <div id="mensaje"></div>
                     <p>We'i send a text to verity your phone</p>
-                    <button type="submit" class="next"><a href="datos.html">NEXT</a></button>
-                </form>
+                    <button class="next"><a href="datos.html">NEXT</a></button>
+                </div>
             </div>
         </div>
     </section>
 </body>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 <script src="js/singUp.js"></script>
 </html>

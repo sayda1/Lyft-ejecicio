@@ -17,25 +17,26 @@ function init(){
   {"nombre": "Canadá","phone_code": "1","imagen": 'img-paises/CA.png',"letra":'Y<br>Z'}
  ];
     
-    var htmlLista = document.getElementById("lista-paises");
+    var htmlLista =document.getElementById("lista-paises");
     for (var i in lista)
     {
         var html='<a href="singUp.html"><li><img src="'+lista[i].imagen+'"alt="" class="imagen">'+lista[i].nombre+'</img><span class="codigo">'+lista[i].phone_code+'</span>'+
         '<span class="span">'+lista[i].letra+'</span><li></a>';
+        //$("#lista-paises").html(html);
         htmlLista.innerHTML+=html;
     }
     
-    var list=document.getElementsByTagName("li");
+    var list=document.getElementsByTagName('li');
     console.log(list);
     
     for ( var x=0 ; x<list.length; x++ )
     {
-        list[x].addEventListener("click" , onClick); 
+        list[x].addEventListener('click' , onClick);
     }
 }
 
-
 function onClick(evt){
+    
     var imagenSrc= evt.currentTarget.getElementsByClassName("imagen")[0].src; 
     var code=evt.currentTarget.getElementsByClassName("codigo")[0].textContent;
     localStorage.setItem('srcImagen',imagenSrc);

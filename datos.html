@@ -28,24 +28,23 @@
             <div class="row">
                     <div class="input-group">
                         <span class="input-group-addon"><span class="fa fa-user"></span></span>
-                        <input type="text" class="form-control" placeholder="Name" id="nombre">
+                        <input type="text" class="form-control" placeholder="Name" id="nombre" onkeyup="valiNombre()">
                         <span class="input-group-addon"><span class="fa fa-user-plus"></span></span>
-                        <input type="text" class="form-control" placeholder="LastName" id="apellido">
+                        <input type="text" class="form-control" placeholder="LastName" id="apellido" onkeyup="valiApellido()">
                     </div>
                     <br>
                     <span id="mensaNombre"></span><span id="mensaApellido"></span>
                     <br>
                     <div class="input-group">
                         <span class="input-group-addon"> <span></span><span class="fa fa-envelope-o"></span></span>
-                        <input type="text" class="form-control" placeholder="E-mail"  id="correo">
+                        <input type="text" class="form-control" placeholder="E-mail"  id="correo" onkeyup="valiCorreo()">
                     </div>
                     <p id="mensaCorreo"></p>
                     
                     <input type="checkbox">
                     <span>I agree to Lyft's<span class="color"> Termes of Service</span></span>
                     <br>
-                    <button class="next" id="next" onclick="validar()"><a href="datos.html">NEXT</a></button>
-                
+                    <button class="next" id="next"><a href="app.html">NEXT</a></button>
             </div>
         </div>
     </section>
