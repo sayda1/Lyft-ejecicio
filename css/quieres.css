@@ -8,6 +8,13 @@
     {
         margin: 20px 10px 0px 0px;
     }
+    #mensaApellido{
+        font-size: 12px;
+        margin-left:10px;
+    }
+    #mensaNombre{
+        font-size: 12px;
+    }
 }
 /*-----------------NEXUS 6P---------*/
 @media screen and (max-width:732px) and (min-width:412px)
@@ -30,6 +37,13 @@
     {
         width:110px;
         margin-bottom:33px;
+    }
+    #mensaApellido{
+        font-size: 11px;
+        margin-left:10px;
+    }
+    #mensaNombre{
+        font-size: 11px;
     }
 }
 /*-----------------PHONE 6-----*/
