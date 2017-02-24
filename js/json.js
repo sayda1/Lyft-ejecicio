@@ -17,7 +17,8 @@ var lista = [
   {"nombre": "sCamerún","phone_code": "237","imagen": 'img-paises/CM.png',"letra":'W<br>X'},
   {"nombre": "Canadá","phone_code": "1","imagen": 'img-paises/CA.png',"letra":'Y<br>Z'},
   {"nombre": "Perù","phone_code": "+51","imagen": 'img-paises/PE.png',"letra":'A<br>E'}
- ];
+    
+];
 
 
 function init(){

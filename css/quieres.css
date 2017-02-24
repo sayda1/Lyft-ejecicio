@@ -2,39 +2,92 @@
 @media screen and (max-width:640px) and (min-width:360px) 
 {
     .section-index{
-        
-        padding-top:28em;
-        padding-bottom: 20px;
+        padding-bottom:4em;
     }
     .section-index button
     {
-        margin: 0;
-        
+        margin: 20px 10px 0px 0px;
     }
 }
 /*-----------------NEXUS 6P---------*/
 @media screen and (max-width:732px) and (min-width:412px)
 {
     .section-index{
-        
-    } 
+        padding-bottom:6em;
+    }
+    .section-index button
+    {
+        font-size: 35px;
+    }
 }
 /*-----------------!PHONE 5-----*/
 @media screen and (max-width:568px) and (min-width:320px) {
-   .section-botones 
+   .section-index 
     {
-        padding-top:12em;
+       padding-top:24em;
     }
-    .section-botones button 
+    .section-index button 
     {
-        margin-bottom: 30px;
-        margin-left: 10px;
-    }
-    .section-botones ul li a 
-    {
-        font-size: 25px;
-        padding:5px 10px;
+        width:110px;
+        margin-bottom:33px;
     }
 }
-/*----------------------*/
-/*-----------------GALAXY S5-----*/
+/*-----------------PHONE 6-----*/
+@media screen and (max-width:667px) and (min-width:375px){
+    .section-index 
+    {
+       padding-top:23em;
+    }
+    .section-index button 
+    {
+        font-size: 35px;
+        width:150px;
+    }
+}
+@media screen and (max-width:736px) and (min-width:414px){
+  .section-index 
+    {
+       padding-top:25em;
+    }
+    .header-index img{
+       margin-top: 80px; 
+    }
+}
+/*-------RESPOSI PAD--*/
+@media screen and (max-width:1024px) and (min-width:768px){
+   .section-index 
+    {
+       padding-top:45em;
+    } 
+    .header-index img{
+        width: 300px;
+    }
+    .section-index button 
+    {
+        width:250px;
+        margin-bottom: 65px;
+    }
+    .section-index button a
+    {
+        font-size: 38px;
+    }
+}
+/*----------!PAD PRO-*/
+@media screen and (max-width:1366px) and (min-width:1024px){
+   .header-index img{
+        margin-top: 180px;
+        width: 400px;
+    }
+    .section-index button a
+    {
+        font-size: 45px;
+    }
+    .section-index button 
+    {
+        margin-bottom: 9em;
+    }
+    .section-index 
+    {
+       padding-top:50em;
+    } 
+}

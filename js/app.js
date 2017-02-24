@@ -1,11 +1,10 @@
-
 var map;
 function initMap() {
     
     var ubicacion1={ lat: -16.457389199999998, lng: -71.5315308};
     var ubicacion2={ lat: -16.45738919999998, lng: -71.537808};
     var ubicacion3={ lat: -16.45738919999598, lng: -71.525728};
-
+    
     map = new google.maps.Map(document.getElementById('map'),{center:ubicacion1,zoom: 14 });
     
     //marcador de ubicacion uno 
@@ -35,5 +34,3 @@ function initMap() {
     });
     //console.log(marcador3);*/
 }
-
-

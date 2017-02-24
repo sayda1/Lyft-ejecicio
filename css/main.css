@@ -1,12 +1,8 @@
 /*--------html1-----pagina principal---*/
-
 body
 {
     margin: 0;
     padding: 0;
-}
-a{
-    text-decoration: none;
 }
 .fondo
 {
@@ -18,7 +14,7 @@ a{
 .header-index img
 {
     width: 150px;
-    margin: 40px;
+    margin-top:50px;
 }
 .section-index{
     padding-top: 190px;
