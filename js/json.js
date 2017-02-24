@@ -1,5 +1,6 @@
-function init(){
-    var lista = [
+$(document).ready(init);
+
+var lista = [
   {"nombre":"Albania", "phone_code": "355", "imagen":'img-paises/AL.png', "letra":'A<br>B'},   
   {"nombre":"Alemania","phone_code": "49" , "imagen": 'img-paises/DE.png',"letra":'C<br>D'},  
   { "nombre":"Algeria","phone_code": "213","imagen": 'img-paises/AF.png',"letra":'E<br>F'},
@@ -14,38 +15,34 @@ function init(){
   {"nombre": "Cabo Verde",  "phone_code": "238 ","imagen": 'img-paises/CV.png',"letra":'S<br>T' },
   {"nombre": "Camboya", "phone_code": "855","imagen": 'img-paises/CN.png',"letra":'U<br>V'},
   {"nombre": "sCamerún","phone_code": "237","imagen": 'img-paises/CM.png',"letra":'W<br>X'},
-  {"nombre": "Canadá","phone_code": "1","imagen": 'img-paises/CA.png',"letra":'Y<br>Z'}
+  {"nombre": "Canadá","phone_code": "1","imagen": 'img-paises/CA.png',"letra":'Y<br>Z'},
+  {"nombre": "Perù","phone_code": "+51","imagen": 'img-paises/PE.png',"letra":'A<br>E'}
  ];
-    
-    var htmlLista =document.getElementById("lista-paises");
+
+
+function init(){
+    var carga='';
     for (var i in lista)
     {
-        var html='<a href="singUp.html"><li><img src="'+lista[i].imagen+'"alt="" class="imagen">'+lista[i].nombre+'</img><span class="codigo">'+lista[i].phone_code+'</span>'+
-        '<span class="span">'+lista[i].letra+'</span><li></a>';
-        //$("#lista-paises").html(html);
-        htmlLista.innerHTML+=html;
+        var html='<li id="'+i+'"><img src="'+lista[i].imagen+'"alt="" class="imagen">'+lista[i].nombre+'</img><span class="codigo">'+lista[i].phone_code+'</span>'+
+        '<span class="span">'+lista[i].letra+'</span><li>';
+        carga+=html;
     }
+    $("#lista-paises").html(carga);
     
-    var list=document.getElementsByTagName('li');
-    console.log(list);
-    
-    for ( var x=0 ; x<list.length; x++ )
-    {
-        list[x].addEventListener('click' , onClick);
-    }
+    var list=$('li');
+    list.each(function(){
+        $(this).click(onClick);
+    });
 }
 
 function onClick(evt){
     
-    var imagenSrc= evt.currentTarget.getElementsByClassName("imagen")[0].src; 
-    var code=evt.currentTarget.getElementsByClassName("codigo")[0].textContent;
-    localStorage.setItem('srcImagen',imagenSrc);
-    localStorage.setItem('codePais' , code);
-    console.log(imagenSrc);
-    console.log(code);
+    localStorage.setItem('srcImagen', evt.currentTarget.id);
+    location.href = "singUp.html";
+    //console.log(code);
+    //evt.preventDefault();
 }
-
-
 
 
 

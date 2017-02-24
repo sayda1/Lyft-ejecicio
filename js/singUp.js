@@ -1,13 +1,16 @@
+$(document).ready(init);
+
 function init()
 {
-    var imgPais = document.getElementById("imgPais");
-    var codigo=document.getElementById("codigo");
-    
+    var imgPais = $("#imgPais");
+    var codigo=$("#codigo");
     var srcLocal=localStorage.getItem('srcImagen');
-    var codePhone=localStorage.getItem("codePais");
+    
+    var paisImg = lista[srcLocal].imagen;
+    var paisCode = lista[srcLocal].phone_code;
  
-    imgPais.src=srcLocal;
-    codigo.textContent=codePhone;
+    imgPais.attr('src', paisImg);
+    codigo.text(paisCode);
 }
 
 function valiNumero(){
@@ -16,7 +19,7 @@ function valiNumero(){
        $('#mensaje').css('color' , 'red').html('Enter only nine digits');
     }else if (numero.val()==""){
         $('#mensaje').html('');
-        $('#mensaje').css('color' , 'red').html('Complete this field .');
+        $('#mensaje').css('color','red').html('Complete this field .');
     }else{
         $('#mensaje').css('color' ,'green').html('Valid.!');
     }

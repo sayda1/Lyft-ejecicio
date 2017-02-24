@@ -43,7 +43,7 @@ function valiCorreo()
         $('#mensaCorreo').css('color','red').html('Check your email .');
     }else if (!valiCorreo.test(correo)){
         $('#mensaCorreo').empty();
-        $('#mensaCorreo').css('color','red').html('lola_tkm@gmail.com');
+        $('#mensaCorreo').css('color','green').html('lola_tkm@gmail.com');
     }else{
         $('#mensaCorreo').css('color','green').html('Valid .!');
     }   
