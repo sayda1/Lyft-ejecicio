@@ -24,8 +24,7 @@ function initMap() {
         title: ' estoy aqui.!',
         icon:'img/carito.jpg'
     });
-    //console.log(marcador2);
-    
+   //console.log(marcador2);
     //marcador de ubicaion tres
     var marcador3 =new google.maps.Marker({ 
         position:ubicacion3, 
@@ -34,3 +33,10 @@ function initMap() {
     });
     //console.log(marcador3);*/
 }
+//$(document).ready();
+$('#flecha').click(function (){
+    $('.lista').show(1000);
+});
+$('ul').click(function(){
+    $(this).hide();
+})

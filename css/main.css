@@ -16,25 +16,36 @@ body
     width: 150px;
     margin-top:50px;
 }
-.section-index{
-    padding-top: 190px;
-}
-.section-index button
-{
-    background: none;
-    border-radius: 7px;
-    width: 150px;
-    margin-left: 30px;
-}
 .section-index a 
 {
     font-size: 25px;
     color: white; 
 }
-.section-index  button:hover
-{
-    background: #f464bc; 
+.section-index button a:hover{
     color: white;
+    text-decoration: none;
+}
+.section-index .singUp
+{
+    background:linear-gradient(to right, rgba(135,0,191,0.45) 10%,rgba(135,0,191,0.5) 20%,rgba(204, 0, 224, 0.8) 85%,rgba(224,0,191,0.9) 100%);
+    border-radius:7px;
+    margin-left: 30px;
+    width: 40%;
+}
+.section-index .singUp:hover{
+    background: none;
+}
+.section-index .app{
+    width: 40%;
+    background: none;
+    border-radius: 7px;
+}
+.section-index .app:hover
+{
+    background:linear-gradient(to right, rgba(135,0,191,0.45) 10%,rgba(135,0,191,0.5) 20%,rgba(204, 0, 224, 0.8) 85%,rgba(224,0,191,0.9) 100%); 
+}
+.section-index{
+    padding-top: 190px;
 }
 
 /*----------------html2-----SING UP----*/
@@ -99,6 +110,7 @@ body
 {
     text-align: center;
     font-weight: bold;
+   
 }
 .section-datos .color
 {
@@ -107,4 +119,3 @@ body
 #mensaApellido{
     margin-left: 140px;
 }
-

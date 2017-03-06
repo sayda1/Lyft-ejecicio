@@ -15,6 +15,10 @@
     #mensaNombre{
         font-size: 12px;
     }
+    /*---------HTML---AP--*/
+    #map{
+        height:400px;
+    }
 }
 /*-----------------NEXUS 6P---------*/
 @media screen and (max-width:732px) and (min-width:412px)

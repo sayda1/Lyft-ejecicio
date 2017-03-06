@@ -1,0 +1,41 @@
+*{
+    outline: 1px solid pink;
+}
+#map{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+}
+/*-------------------------REQUESET-----HTML----*/
+.todo img{
+    width:150px;
+}
+.todo{
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+    background: white;
+    border-radius:7px;
+    border: 1px solid black;    
+}
+.cajaCard{
+    width:100%;
+    text-align: center;
+    z-index:1;
+    background: #d8d8d8;
+}
+/*------HTML----PAYMET------*/
+.img-responsive{
+   width:60px; 
+}
+.text-left{
+    font-size: 25px;
+    font-family:sans-serif;
+}
+.chica img{
+    width:120px;
+    border-radius: 200px;
+}
+.fa-credit-card{
+    
+}
