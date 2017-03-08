@@ -5,54 +5,71 @@
     <title>Requeset</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/quieres.css">
     <link rel="stylesheet" href="css/main3.css">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
-<body>
-   <div id="map">
-        
-    </div> 
-    <section class="todo">
-        <div class="container">
-       <div>
-           <div class="cajaCard">
+<body onload="init()">
+  <!----------CONTENEDOR--DEL MAPA------->
+   <div id="map"></div>
+   <!----------CONTENEDOR DEL LOGO--Y--IMAGEN--DE--CHICA------->
+   <header>
+       <div class="container">
            <div class="row">
-               <div class="col-xs-6">
-                   <img src="img/blanco.jpg" alt="" class="img-responsive">
-               </div>
-               <div class="col-xs-6">
-                  <h2>Lyft</h2> 
-                  <p>Farst ride , 4 seats</p>
-               </div>
-           </div>
-           <div class="row">
-               <div class="col-xs-6">
-                   <img src="img/master.png" alt="" class="img-responsive">
-                   <p>Paymet</p>
-               </div>
-               <div class="col-xs-6">
-                   <h4>$6-12</h4>
-                   <p>price estimate</p>
-               </div>
-           </div>
-        </div>
-       <div class="personal">
-            <div class="harrison">
-                <span class="morado"></span> 
-                <p>2300 Harrison St</p>
+                <img src="img/chica.jpg" alt="" class="header_chica"> 
+                <div class="logo"><h1 class="text-center">lyft</h1></div>
             </div>
-            <div>
-                <span class="rosado"></span>
-                <p>Caltarin station</p>
-            </div>   
-        </div>
        </div>
-    </div>
+   </header>
+   <!----------CONTENEDOR-ICONOS-------> 
+   <section>
+       <div class="container">
+           <div class="row">
+               
+           </div>
+       </div>
+   </section>
+   <!------------SECTION-DE----LAS CULUMNAS----->
+    <section class="caja">
+        <div class="container todo">
+          <div class="row">
+                <div class="col-xs-6">
+                   <br>
+                    <img src="img/carro.jpg" alt="" class="carrito">
+                </div>
+                <div class="col-xs-6">
+                    <h3>Lyft</h3> 
+                    <p>Farst ride , 4 seats</p>
+                </div>
+          </div>
+          <div class="row">
+                   <div class="col-xs-6">
+                       <img src="img/master.png" alt="" class="master"><span>Personal</span>
+                       <br>
+                       <p class="parafo">Paymet</p>
+                   </div>
+                   <div class="col-xs-6">
+                       <h4 id="presio">$6-12</h4>
+                       <p class="parafo" style="font-size:24px">price estimate</p>
+                   </div>
+            </div>
+         <div class="personal">
+                <div class="harrison">
+                    <span class="morado">as</span> 
+                    <span>2300 Harrison St</span>
+                </div>
+                <hr>
+                <div>
+                    <span class="rosado">as</span>
+                    <span id="lugar">Caltarin station</span>
+                </div>   
+            </div>
+            
+        </div>
+        <button class="boton" style="position:absolute; bottom:20px">Request Lyft</button> 
     </section>
-    <button class="request">Request Lyft</button> 
 </body>
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEzRM71KTy8oS0oopI8r4evSB6L4anJLo&callback=initMap" async defer></script>
     <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/requeset.js"></script>
 </html>

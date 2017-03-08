@@ -45,6 +45,6 @@ function valiCorreo()
         $('#mensaCorreo').empty();
         $('#mensaCorreo').css('color','green').html('lola_tkm@gmail.com');
     }else{
-        $('#mensaCorreo').css('color','green').html('Valid .!');
+        $('#mensaCorreo').css('color','green').html('Valid.!');
     }   
 }  

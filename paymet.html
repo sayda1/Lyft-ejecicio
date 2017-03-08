@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/quieres.css">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body onload="init()">
    <header>
         <div class="container">
         <div class="row text-center">
-           <div class="col-xs-6">
+           <div class="col-xs-5">
               <img src="img/logo2.png" alt="" class="img-responsive">  
            </div>
             <div class="col-xs-6">
@@ -26,9 +25,11 @@
    <section>
        <div class="container">
            <div class="row text-center">
-               <div class="chica">
-                   <img src="img/chica.jpg" alt="">
+               <div class="borde" >
+                   <img src="img/chica.jpg" alt="" class="chica" id="imagen">
                </div>
+               <br>
+               <br>
                <div class="btn-group btn-group-justified">
                    <div class="btn-group">
                        <button type="button" class="btn btn-default">No tip</button>
@@ -45,11 +46,6 @@
                     <div class="btn-group">
                        <button type="button" class="btn btn-default">Other</button>
                    </div>
-                    
-                    <!---<button type="button" class="btn btn-default">$ 1</button>
-                    <button type="button" class="btn btn-default">$ 2</button>
-                    <button type="button" class="btn btn-default">$5</button>
-                    <button type="button" class="btn btn-default">Other</button>-->
                 </div>
            </div>
        </div>
@@ -62,19 +58,26 @@
                     <div>
                       <div class="input-group">
                           <div class="input-group-btn">
-                           <button><i class="fa fa-credit-card"></i></button>
-                           <span class="btn">Paymet</span>
+                           <button class="btn btn-default dropdown-toggle"><i class="fa fa-credit-card" id="icono"></i></button>
+                           <span class="btn span">Paymet</span>
                           </div>
-                          <input type="text" class="form-control" aria-label="..." placeholder="1234 >">
+                          <input type="text" class="form-control">
                         </div>
                   </div>
+                  <br>
+                  <br>
                   <div  class="text-center">
-                      <h1 class="">$ 9.00</h1>
+                      <h1 class="titulo" id="presio">$ 9.00</h1>
                   </div>
                </div>
-               <button class="" style="width:100%">NEXT</button>
+               <br>
+               <br>
+               <br>
            </div>
+           <button class="btn next" style="width:100%">NEXT</button>
        </div>
    </section>
 </body>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/paymet.js"></script>
 </html>
