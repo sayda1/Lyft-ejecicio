@@ -13,11 +13,11 @@
         margin-left:10px;
     }
     #mensaNombre{
-        font-size: 12px;
+        font-size:12px;
     }
-    /*---------HTML---AP--*/
-    #map{
-        height:400px;
+    /*---------HTML---APP--*/
+    .dropdown-menu{
+        width:120%;
     }
 }
 /*-----------------NEXUS 6P---------*/
@@ -29,6 +29,13 @@
     .section-index button
     {
         font-size: 35px;
+    }
+    /*---------HTML---APP--*/
+    .dropdown-menu{
+        width:130%;
+    }
+    .dropdown-menu img{
+        width:90px;
     }
 }
 /*-----------------!PHONE 5-----*/
@@ -49,6 +56,13 @@
     #mensaNombre{
         font-size: 11px;
     }
+    /*---------HTML---APP--*/
+    .dropdown-menu{
+        width:105%;
+    }
+    .dropdown-menu img{
+        width:80px;
+    }
 }
 /*-----------------PHONE 6-----*/
 @media screen and (max-width:667px) and (min-width:375px){
@@ -61,7 +75,12 @@
         font-size: 35px;
         width:150px;
     }
+    /*---------HTML---APP--*/
+    .dropdown-menu{
+        width:125%;
+    }
 }
+/*------!PHONE--6--PLUS---------*/
 @media screen and (max-width:736px) and (min-width:414px){
   .section-index 
     {
@@ -70,8 +89,12 @@
     .header-index img{
        margin-top: 80px; 
     }
+    /*---------HTML---APP--*/
+    .dropdown-menu{
+        width:130%;
+    }
 }
-/*-------RESPOSI PAD--*/
+/*-------RESPOSI-------PAD--*/
 @media screen and (max-width:1024px) and (min-width:768px){
    .section-index 
     {
@@ -88,6 +111,10 @@
     .section-index button a
     {
         font-size: 38px;
+    }
+    /*---------HTML---APP--*/
+    .dropdown-menu{
+        width:250%;
     }
 }
 /*----------!PAD PRO-*/
@@ -108,4 +135,12 @@
     {
        padding-top:50em;
     } 
+    /*---------HTML---APP--*/
+    .dropdown-menu{
+        width:330%;
+    }
+  
+    .dropdown-menu img{
+        width:100px;
+    }
 }
