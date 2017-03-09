@@ -39,13 +39,32 @@ function initMap() {
         icon:'img/carito.jpg'
     });
 }
-//$(document).ready();
-$('#buton-app').click(function (){
-    location.href = "requeset.html";
+$(document).ready(init);
+var lista =[
+    {"imagen":'img/carito.jpg' , "tipo":'Line' , "minutos":' 3 <br> min' ,"texto":'Shared, 2 riders max'},
+    {"imagen":'img/icono.png' , "tipo":'Lyft' , "minutos":' 3 <br> min',"texto":'4 seats'},
+    {"imagen":'img/carrito3.png' , "tipo":'Plus' , "minutos":' 4 <br> min',"texto":'6 seats'},
+    {"imagen":'img/carrito4.jpg' , "tipo":'Premiun' , "minutos":'3 <br> min',"texto":'High-end, 4 seats'}
+]
+function init(){
+    var carga='';
+    for (var i in lista){
+        var html='<ul class="list-inline lista" id="'+i+'">'+
+            '<li><img src="'+lista[i].imagen+'"alt=""></img></li>'+
+            '<li class="tipo"><h3 class="titulo">'+lista[i].tipo+'</h3><p class="texto">'+lista[i].texto+'</p></li>'+
+            '<li class="minuto"><p>'+lista[i].minutos+'</p></li>'+
+        '</ul>';
+        carga+=html;
+    }
+    $('#lista_card').html(carga);
+    var listaUl=$('ul');
+    listaUl.each(function (){
+       $(this).click(onPedido); 
+    })
+}
+function onPedido(evt){
+    localStorage.setItem('srcImagen',evt.currentTarget.id);
+}
+$('#buton-app').click(function(){
+    location.href="requeset.html"
 });
-/*$('ul').click(function(){
-    $(this).hide();
-})*/
-
-
-

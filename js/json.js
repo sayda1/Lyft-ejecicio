@@ -44,8 +44,3 @@ function onClick(evt){
     //console.log(code);
     //evt.preventDefault();
 }
-
-
-
-
-

@@ -1,5 +1,6 @@
 function init(){
     solicitar();
+    tipoDeAuto();
 }
 function solicitar(){
     $.ajax({
@@ -19,7 +20,21 @@ function update(_info){
     $('#lugar').text(_info.origen);
     $('#destino').text(_info.destino);
 };
+
+function tipoDeAuto(){
+    var imgCarro=$('#img-carro');
+    var tipoCarro=$('#tipo');
+    var textoCard=$('#texto');
+    
+    var local=localStorage.getItem('srcImagen');
+    var img =lista[local].imagen;
+    var cardTipo =lista[local].tipo;
+    var cardTexto=lista[local].texto;
+    
+    imgCarro.attr('src', img);
+    tipoCarro.text(cardTipo);
+    textoCard.text(cardTexto);
+}
 $('button').click(function(){
-    $(this).css('color' , 'withe')
     location.href ="paymet.html";
-})
+});

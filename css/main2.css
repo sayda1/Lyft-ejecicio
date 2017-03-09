@@ -29,7 +29,7 @@
     right:1%;
 }
 .contenedor img{
-    width: 100px;
+    width: 90px;
 }
 .contenedor{
     background: white;
@@ -40,22 +40,35 @@
     width:90%;
 }
 .paz{
-    margin: 30px;
+    margin:30px;
     font-size:20px;
     color: #867f7f;
 }
 
-.contenedor .row{
-    font-size: 15px;
-    color: #5d5c5c;
-    width: 400px;
+.dropdown-menu{
+    width:150%;
+    padding:3px;
 }
-.contenedor .row:hover{
+.dropdown-menu .minuto {
+   float: right;
+    padding-left: 10px;
+}
+.dropdown-menu .tipo{
+    margin-left:20px;
+}
+.dropdown-menu .texto{
+    color: #837b7b;
+    font-weight:600;
+}
+.dropdown-menu ul:hover{
     background: rgba(124, 134, 165, 0.35);
     border-radius: 20px;
-    font-size: 20px;
-    color: rgba(135, 19, 219, 0.5);
+    color:rgba(135, 19, 219, 0.5);
     font-weight: bold;
+}
+.titulo{
+   margin:0px;
+    font-size:20px;
 }
 .butonApp{
     background: #7520d8;
