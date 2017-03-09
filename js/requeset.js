@@ -38,3 +38,6 @@ function tipoDeAuto(){
 $('button').click(function(){
     location.href ="paymet.html";
 });
+$('#regreso').click(function(){
+    location.href="app.html";
+})
